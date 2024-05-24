@@ -63,8 +63,21 @@ a:visited {
 }
 
 .workouts::-webkit-scrollbar {
-  width: 0;
+  width: 10px;
 }
+
+.workouts::-webkit-scrollbar-track {
+  background: #7e7c7c; 
+  border-radius: 2px; 
+}
+
+.workouts::-webkit-scrollbar-thumb {
+  background: #cbbbbb; /* Color of the scrollbar thumb */
+  border-radius: 2px; /* Rounding the corners of the scrollbar thumb */
+}
+
+
+
 
 .workout {
   background-color: var(--color-dark--2);
@@ -76,6 +89,7 @@ a:visited {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 0.75rem 1.5rem;
+
 }
 .workout--running {
   border-left: 5px solid var(--color-brand--2);
